@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_xzheur!hcp*%+iom#alr)i9vefv-rwv4icu60=1#ok5y_bgku
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['umngexperimentoweb.azurewebsites.net','http://127.0.0.1:8000/']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ExperimentoApp'
 ]
 
 MIDDLEWARE = [
