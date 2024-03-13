@@ -75,18 +75,13 @@ WSGI_APPLICATION = 'webExperimento.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'experimentos',
-        'USER': 'JuanChurio',
-        'PASSWORD': 'UmngExperimento4$',
-        'HOST': 'umng-experiment.database.windows.net',
-        'PORT': '',
-        'OPTIONS':{
-            
-            'driver': 'ODBC Driver 18 for SQL Server',
-        }
-        
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "mydatabase",
+        "USER": "mydatabaseuser",
+        "PASSWORD": "mypassword",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
     }
 }
 
